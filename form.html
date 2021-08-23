@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <title>LET'S GO AIRLINES</title>
+   
+   <link rel="icon" type="image/png" href="favicon-16x16.png" />
+   
+    </head>
+   
+    <body style="background-color:azure">
+
+<center>
+  <form name="theform">
+   
+      <label for="ORIGIN CITY">ORIGIN CITY</label>
+      <select name="origincity" id="ORIGIN CITY">
+        
+        <option value="SELECT">----SELECT----</option>
+                
+
+        <option value="MUMBAI">MUMBAI</option>
+         <option value="KOLKATA">KOLKATA</option>
+         <option value="CHENNAI">CHENNAI</option>
+        
+        <option value="BANGLORE">BANGLORE</option>
+        
+
+        
+      </select>
+      <br><br>
+      <label for="DESTINATION">DESTINATION</label>
+      <select name="destination" id="DESTINATION">
+        
+        <option value="SELECT">----SELECT----</option>
+                
+
+        <option value="MUMBAI">MUMBAI</option>
+         <option value="KOLKATA">KOLKATA</option>
+         <option value="CHENNAI">CHENNAI</option>
+        
+        <option value="BANGLORE">BANGLORE</option>
+        
+
+        
+      </select>
+      <br><br>
+        
+      <label for="Date">Date Of Journey:</label>
+      <input type="date" id="select_date" name="date"/>
+      <script>
+        var date= new Date();
+        var tdate=date.getDate();
+        var month=date.getMonth()+1;
+        if(tdate<10){
+          tdate='0'+      tdate;
+        }
+        if(month<10)
+        {month='0'+month;}
+        var year=date.getUTCFullYear();
+        var minDate=year+"-"+month+"-"   +tdate  ;
+        document.getElementById("select_date").setAttribute('min',minDate) 
+        </script>  <br><br>
+      
+    <label for="PASSENGER NUMBER">PASSENGER NUMBER:</label>
+    <select name="number" id="PASSENGER NUMBER">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      
+    </select>
+    <br><br>
+    
+    
+<input  type="button"  onclick="window.location.href = 'card.html';"  type="submit" value="Submit" />
+
+
+
+   
+   
+
+   
+  </form>
+  
+
+
+
+  </center>>
+</body>
+</html>

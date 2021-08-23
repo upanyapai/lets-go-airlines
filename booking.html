@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <title>LET'S GO AIRLINES</title>
+   
+    <link rel="icon" type="image/png" href="favicon-16x16.png" />
+</head>
+<body style="background-color:thistle">
+    <form name="theform">
+        
+          
+            
+     
+          
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"oninvalid="alert('Must contain 6 or more characters');"pattern=".{6,}" <br><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" oninvalid="alert('Must contain 6 or more characters');"pattern=".{6,}"><br><br>
+        
+        <label>Enter your age: </label>  
+        <input type="number" name="num" min="00" max="100">  <br><br>
+        <p>Kindly Select your gender:</p> 
+        <input type="radio" id="f" name="search gender" value="f">
+    <label >Female</label><br>
+    <input type="radio" id="m" name="search gender" value="m">
+    <label >Male</label><br>
+    <input type="radio" id="o" name="search gender" value="o">
+    <label >Others</label><br>
+
+    <label for="email">email id:</label>
+    <input type="text" id="email" name="email" ><br><br>
+    
+    <label>Phone number: </label>  
+    <input type="text" name="num" oninvalid="alert('Must contain 10 or more characters');"pattern=".{10,}"> <br><br>
+
+  
+        <input id="submitbutton" type="submit" value="submit" onclick="window.location.href = 'confirm.html';"/>
+        <input type="reset">
+        
+      </form>
+</body>
+</html>
